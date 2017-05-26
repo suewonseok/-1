@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <ul class="nav nav-pills" style="z-index:1; position:fixed; display:inline-block">
+          <li role="presentation" class="active"><a href="#pageone">Thumnail</a></li>
+          <li role="presentation" class="active"><a href="#pagetwo">random sentence</a></li>
+        </ul>
+        <div style="height:38px;"></div>
+        <div style="height:150px;"><h1 style="font-size:5rem; font-weight:bold; text-align:center; margin:0; padding-top:50px;">
+            멋사 추가과제 챕터1</h1></div>
+       
+       
+        <div class="row " style="border:2px solid black; pading-right:50px; pading-left:50px; padding-bottom:75px;">
+            
+            <div style="font-size:3rem; font-weight:bold; text-align:center; margin-top:75px; margin-bottom:75px;">
+                <a style="text-decoration:none; color:block;" id="pageone">Thumnail 30개</a></div>
+                <% @array.each do |x|%>
+                <div class="col-xs-4 col-md-3">
+                    <a href="<%=x%>" class="thumbnail" style=" display:inline-block;">
+                        <img style = "margin:40px 40px; height:150px; width:150px;" src="<%=x%>">
+                    </a>
+                    </div>
+                <%end%>
+            
+            
+            
+        </div>
+        
+        
+        <div style="height:200px; font-size:3rem; font-weight:bold; text-align:center; margin:0;">
+            
+            <div style="padding-top:95px;"><a style="text-decoration:none; color:block;" id="pagetwo">문장10개 2개씩 </a></div></div>
+        
+        
+        <div class = "container" style="height:400px; display:flex; font-size:3rem; flex-direction:column;
+                        justify-content:space-around;">
+            <div>문장 세트1: <%= @result1%>,&nbsp<%= @result2%></div>
+            <div>문장 세트2: <%= @result3%>,&nbsp<%= @result4%></div>
+            <div>문장 세트3: <%= @result5%>,&nbsp<%= @result6%></div>
+            <div>문장 세트4: <%= @result7%>,&nbsp<%= @result8%></div>
+            <div>문장 세트5: <%= @result9%>,&nbsp<%= @result10%></div>
+            
+        </div>
+        <div style="height:150px;"></div>
+       
+    </body>
+    
+</html>
+
